@@ -14,5 +14,5 @@ This project focuses on building an ETL (Extract, Transform, Load) pipeline that
 * **Docker:** Dockerizing the whole pipeline
 
 ## **Flow Chart**
-[flowchart](https://github.com/Prithiviraj25/NASA_APOD_ETL_PIPELINE/blob/main/images/flowchart.png)
+[flowchart](main/images/flowchart.png)
  
