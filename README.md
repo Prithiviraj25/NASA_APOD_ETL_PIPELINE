@@ -14,5 +14,5 @@ This project focuses on building an ETL (Extract, Transform, Load) pipeline that
 * **Docker:** Dockerizing the whole pipeline
 
 ## **Flow Chart**
-[flowchart](main/images/flowchart.png)
+<img src="/images/flowchart.png">
  
