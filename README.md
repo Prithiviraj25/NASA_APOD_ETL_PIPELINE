@@ -15,4 +15,20 @@ This project focuses on building an ETL (Extract, Transform, Load) pipeline that
 
 ## **Flow Chart**
 <img src="/images/flowchart.png">
+
+## **APPENDIX**
+once we launch the project using command **astro dev start**
+we need to set 2 different connections in the airflow UI which will help the airflow communicate with the postgres container and one for http connection
+<img src="/images/connections.png">
+
+The host of the **my_postgres_connection** will be the id of the postgres container running in the docker
+
+Once all the connection is set the ETL pipline will start running
+<img src="/images/home.png">
+***
+<img src="/images/inside.png">
+
+The final output can be seen with help of **pgAdmin** or any such tool by connecting with the postgres container running in the docker 
+
+<img src="/images/pgadmin.png">
  
