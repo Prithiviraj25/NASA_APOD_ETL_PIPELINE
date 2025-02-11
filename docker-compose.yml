@@ -1,0 +1,23 @@
+## this file used to run the postgres as a seperate container
+version: '3'
+services:
+  postgres:
+    image: postgres:13
+    container_name: my_postgres_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRESS_DB: postgres 
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data: /var/lib/postgresql/data
+    network:
+      - airflow_network
+
+networks: ## creates a new network if it does not exists
+  airflow_network:
+    external: false
+
+volumes: ## creates a new volume if it doesnot exists
+  postgres_data:
